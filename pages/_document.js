@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <script src={`${process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://mf-example-remote.vercel.app/'}/_next/static/chunks/remoteEntry.js`} />
+          <script src={`${process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://mf-example-remote.vercel.app'}/_next/static/chunks/remoteEntry.js`} />
           <NextScript />
         </body>
       </Html>

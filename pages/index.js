@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic';
 
 const Birbs = dynamic(
-  // @ts-ignore
   () => window.exampleRemote.get('./BizBirds').then((factory) => factory()),
   {
     ssr: false,
@@ -20,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 styles={styles.title}>This is coming from mf-example-remote.vercel.com</h1>
+        <h1 styles={styles.title}>This is coming from mf-example-remote.vercel.app</h1>
         <Birbs />
       </main>
 
